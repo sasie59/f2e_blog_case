@@ -7,13 +7,7 @@ export default class HomePage extends Component {
       <div>
         <ul>
           <li>
-            <Link to="/Desktop">桌機版本</Link><br />
-          </li>
-          <li>
-            <Link to="/Mobile">手機版本</Link><br />
-          </li>
-          <li>
-            <Link to="/Tablet">平版版本</Link><br />
+            <Link to="/Home">首頁</Link><br />
           </li>
         </ul>
       </div>
