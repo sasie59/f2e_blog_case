@@ -1,0 +1,108 @@
+.layout {
+  width: 1280px;
+  height: 101px;
+  background-color: #f8f8f8;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.03);
+  position: relative;
+  .projectName {
+    position: relative;
+    width: 174px;
+    height: 63px;
+    left: 40px;
+    top: 20px;
+    background-color: red;
+  }
+  input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 10px 10px 24px;
+    position: absolute;
+    width: 482px;
+    height: 46px;
+    left: 372px;
+    top: 35px;
+    background-color: #edeef0;
+    border-radius: 12px;
+  }
+  .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 900px;
+    top: 35px;
+    background: #313131;
+    border-radius: 12px;
+    .magnifier {
+      position: static;
+      left: 31.52%;
+      right: 31.52%;
+      top: 30.2%;
+      bottom: 30.2%;
+      background: #FFFFFF;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 10px;
+    }
+  }
+  .proposal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 24px;
+    position: absolute;
+    width: 150px;
+    height: 46px;
+    left: 1028px;
+    top: 35px;
+    background: #313131;
+    border-radius: 8px;
+    .img {
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      left: 25px;
+      top: 12.8px;
+      background-color: #fff;
+    }
+    .text {
+      position: static;
+      width: 68px;
+      height: 21px;
+      right: 23.5px;
+      top: 12.5px;
+      font-family: 'Noto Sans CJK TC';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #FFFFFF;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 0px 11px;
+    }
+  }
+  .login {
+    position: absolute;
+    width: 45px;
+    height: 26px;
+    left: 1230px;
+    top: 47px;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #919191;
+    width: 45px;
+    height: 26px;
+  }
+}
