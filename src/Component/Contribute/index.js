@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '../Component/Title';
+import Title from '../Title';
 import style from './style.module.scss';
 
 export default function index() {

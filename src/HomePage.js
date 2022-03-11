@@ -13,7 +13,10 @@ export default class HomePage extends Component {
             <Link to="/Loading">Loading</Link><br />
           </li>
           <li>
-            <Link to="/Contribute">投稿</Link><br />
+            <Link to="/Component/Contribute">投稿</Link><br />
+          </li>
+          <li>
+            <Link to="/Edit">編輯</Link><br />
           </li>
         </ul>
       </div>
