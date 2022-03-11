@@ -9,6 +9,9 @@ export default class HomePage extends Component {
           <li>
             <Link to="/Component/Title/">檯頭</Link><br />
           </li>
+          <li>
+            <Link to="/Loading">Loading</Link><br />
+          </li>
         </ul>
       </div>
     )

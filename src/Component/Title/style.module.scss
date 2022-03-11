@@ -9,8 +9,9 @@
     width: 174px;
     height: 63px;
     left: 40px;
-    top: 20px;
-    background-color: red;
+    top: 21px;
+    font-size: 32px;
+    // background-color: red;
   }
   input {
     display: flex;
@@ -64,12 +65,12 @@
     top: 35px;
     background: #313131;
     border-radius: 8px;
-    .img {
+    img {
       width: 21px;
       height: 21px;
       position: absolute;
       left: 25px;
-      top: 12.8px;
+      margin-top: 3px;
       background-color: #fff;
     }
     .text {
