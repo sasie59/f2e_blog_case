@@ -12,6 +12,9 @@ export default class HomePage extends Component {
           <li>
             <Link to="/Loading">Loading</Link><br />
           </li>
+          <li>
+            <Link to="/Contribute">投稿</Link><br />
+          </li>
         </ul>
       </div>
     )
