@@ -1,5 +1,5 @@
 import React from 'react'
-import Contribute from '../Component/Contribute'
+import Contribute from '../components/Contribute'
 
 export default function index() {
   return (

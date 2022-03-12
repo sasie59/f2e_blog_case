@@ -1,6 +1,8 @@
 import React from 'react';
 import style from './style.module.scss';
 import pen from './pen.png';
+
+/** @deprecated */
 export default function index() {
   return (
     <div className={style.layout}>
