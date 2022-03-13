@@ -13,56 +13,78 @@
     }
   }
   .menu {
+    flex: 1;
     display: flex;
-    margin-left: 340px;
+    // align-items: center;
     .searchBar {
+      flex: 1;
       display: flex;
+      justify-content: center;
+      align-items: center;
       input {
-        width: 482px;
-        height: 46px;
+        width: 100%;
+        max-width: 482px;
+        height: 44px;
+        padding-left: 24px;
         background: #EDEEF0;
         border-radius: 12px;
+        border: none;
+      }
+      .space {
+        width: 8px;
       }
       button {
-        width: 52px;
-        height: 52px;
+        border: none;
+        width: 46px;
+        height: 46px;
         border-radius: 12px;
         background-color: #313131;
         background-image: url(./Shape.png);
         background-repeat: no-repeat;
         background-position: center;
-        margin-left: 8px;
       }
     }
-    .proposal {
+    .include {
       display: flex;
       align-items: center;
-      width: 150px;
-      height: 40px;
-      background-color: #313131;
-      border-radius: 8px;
-      margin-left: 340px;
-      img  {
-        width: 21px;
-        height: 20px;
-        margin: 0 auto;
+      .proposal {
+        display: flex;
+        align-items: center;
+        width: 150px;
+        height: 46px;
+        background-color: #313131;
+        border-radius: 8px;
+        .space1 {
+          width: 25px;
+        }
+        .img  {
+          width: 21px;
+          height: 20.4px;
+          background-image: url(./pen.png);
+        }
+        .space2 {
+          width: 12.5px;
+        }
+        .text {
+          color: #fff;
+        }
       }
-      .text {
-        color: #fff;
-        margin: 0 auto;
-      }
+    }
+    .space {
+      width: 16px;
     }
     .photo {
       width: 46px;
-      height: 46px;
-      margin-left: 16px;
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(./photo.png);
     }
+    .lastSpace {
+      width: 40px;
+    }
   }
   .menu > * {
-    padding: 10px;
+    // padding: 10px;
   }
 }
 
@@ -72,8 +94,26 @@
 }
 
 // 平板
-@media (min-width: 768px) {
-
+@media (min-width: 768px)and (max-width: 1199px){
+  .Header {
+    .menu {
+      .searchBar {
+        margin: 0 27px;
+        button {
+          width: 46px;
+          height: 46px;
+        }
+      }
+      .include {
+        
+      }
+      .photo {
+      }
+      .lastSpace {
+        width: 16px;
+      }
+    }
+  }
 }
 
 // 手機
@@ -89,18 +129,24 @@
     }
     .menu {
       flex-direction: row-reverse;
-      margin-left: 10px;
+      padding: 0 16px;
       .searchBar {
+        flex: 1;
         input {
-          width: 220px;
+          width: 100%;
+          padding-left: 10px;
         }
       }
-      .proposal {
+      .include {
         display: none;
       }
+      .space {
+        width: 8px;
+      }
       .photo {
-        margin-right: 0px;
-        margin-left: 0px;
+      }
+      .lastSpace {
+        display: none;
       }
     }
   }
