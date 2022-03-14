@@ -1,0 +1,39 @@
+.ComponentPage {
+  background-color: #666;
+  opacity: 0.6;
+  height: 100vh;
+  .message {
+    position: relative;
+    font-size: 18px;
+    .text {
+      position: absolute;
+      color: #313131;
+      top: 48px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .choice {
+      display: flex;
+      // text-align: center;
+      // justify-content: center;
+      position: absolute;
+      top: 115.5px;
+      padding: 0 57px;
+      .exit {
+        flex: 1;
+        width: 36px;
+        height: 26px;
+        color: #BEBEBE;
+      }
+      .space {
+        width: 114px;
+      }
+      .login {
+        flex: 1;
+        width: 36px;
+        height: 26px;
+        color: #00A3FF;
+      }
+    }
+  }
+}
