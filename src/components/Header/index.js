@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './style.module.scss';
-import pen from './pen.png';
 
 export function Header() {
   return (
@@ -19,7 +18,7 @@ export function Header() {
             <div className={style.space1} />
             <div className={style.img} />
             <div className={style.space2} />
-            <div className={style.text}>投稿/提案</div>
+            <div className={style.text}>投稿 / 提案</div>
           </div>
         </div>
         <div className={style.space} />
