@@ -5,6 +5,8 @@
   .message {
     position: relative;
     font-size: 18px;
+    width: 300px;
+    height: 179px;  
     .text {
       position: absolute;
       color: #313131;
@@ -14,10 +16,8 @@
     }
     .choice {
       display: flex;
-      // text-align: center;
-      // justify-content: center;
       position: absolute;
-      top: 115.5px;
+      top: 115.5px;      
       padding: 0 57px;
       .exit {
         flex: 1;
@@ -35,5 +35,48 @@
         color: #00A3FF;
       }
     }
+  }
+  .bigMessage {
+    position: relative;
+    font-size: 18px;
+    width: 300px;
+    height: 213px; 
+    .text {
+      position: absolute;
+      color: #313131;
+      top: 48px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .choice {
+      display: flex;
+      position: absolute;
+      top: 149.5px;      
+      padding: 0 57px;
+      .exit {
+        flex: 1;
+        width: 36px;
+        height: 26px;
+        color: #BEBEBE;
+      }
+      .space {
+        width: 114px;
+      }
+      .login {
+        flex: 1;
+        width: 36px;
+        height: 26px;
+        color: #00A3FF;
+      }
+    }
+    .sure {
+      width: 36px;
+      height: 26px;
+      color: #00A3FF;
+      margin: 0 auto;
+      position: relative;
+      top: 149.5px;
+      // bottomn: 37.5px
+    } 
   }
 }
