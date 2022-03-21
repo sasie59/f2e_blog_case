@@ -1,77 +1,35 @@
 .Combobox {
   margin: 0 auto;
-  display: flex;
-  flex-direction:column;
   max-width: 783px;
-  select {
-    padding-left: 20px;
-    background: #F6F7F9;
-    border-radius: 8px;
-  }
   .box {
     border-radius: 8px;
     line-height: 23px;
     color: #313131;
-    background: #fff;
+  }
+  .fakeSelect {
     position: relative;
-  }
-  img {
-    width: 12px;
-    height: 10.91px;
-    position: absolute;
-    right: 27.18px;
-  }
-  .firSelect {
-    // height: 52px;
-    background-color: #F6F7F9;
-    background: #F6F7F9;
-    border-radius: 8px;
-    padding-left: 20px;
-    margin-bottom: 30px;
-    padding-top: 14px;
-    padding-bottom: 15px;
-    img {
-      top: 20.09px;
-    }
-  }
-  .secSelect {
-    // height: 149px;
-    position: relative;
-    background-color: #F6F7F9;
-    border-radius: 8px;
-    padding-left: 20px;
-    padding-top:  15px;
-    padding-bottom: 17px;
-    margin-bottom: 25px;
-    .space {
-      height: 24px;
-    }
-    img {
-      position: absolute;
-      top: 21.09px;
-    }
-  }
-  .thirSelect {
-    // max-height: 146px;
     background-color: #F6F7F9;
     border-radius: 8px;
     padding-top:  15px;
-    padding-bottom: 14px;
-    position: relative;
-    div {
+    padding-bottom: 17px;
+    .fakeLi {
       padding-left: 20px;
     }
-    .space {
-      height: 24px;
-    }
-    .choice {
-      background-color: #313131;
+    .fakeLi:hover {
+      background-color: #313131;;
       color: #fff;
-      // padding-left: 20px;
+      padding-top: 6px;
+      padding-bottom: 9px;
     }
     img {
+      width: 12px;
+      height: 10.91px;
       position: absolute;
+      right: 27.18px;
       top: 21.09px;
+    }
+    .space {
+      height: 24px;
     }
   }
 }

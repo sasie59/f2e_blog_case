@@ -1,7 +1,26 @@
 .ComponentPage {
   // background-color: #666;
   // opacity: 0.6;
-  height: 100vh;
+  // height: 100vh;
+  .fakeSelect {
+    margin: 0 auto;
+    max-width: 783px;
+    background: #F6F7F9;
+    border-radius: 8px;
+    padding-top:  14px;
+    padding-bottom: 15px;
+    position: relative;
+    .choice {
+      margin-left: 20px;
+    }
+    img {
+      width: 12px;
+      height: 10.91px;
+      position: absolute;
+      right: 27.18px;
+      top: 21.09px;
+    }
+  }
   .message {
     position: relative;
     font-size: 18px;
@@ -121,4 +140,22 @@
       color: #fff;
     }
   }
+}
+
+
+@media (min-width: 768px)and (max-width: 1199px) {
+  .ComponentPage {
+    .fakeSelect {
+      max-width: 655px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ComponentPage {
+    .fakeSelect {
+      max-width: 300px;
+    }
+  }
+  
 }
