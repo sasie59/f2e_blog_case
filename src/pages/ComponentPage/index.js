@@ -1,29 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import style from './style.module.scss';
 import * as Comp from "components";
-import icon from './Polygon.png';
 
 export const ComponentPage = () => {
-  const [isAppear, setIsAppear] = useState(false);
-
-  const handleClick = () => {
-    setIsAppear(!isAppear);
-  }
   return (
     <div className={style.ComponentPage}>
       <h2>ComponentPage</h2>
       <h3>header</h3>
       <Comp.Header />
       <h3>combobox</h3>
-      <div className={style.fakeSelect} onClick={handleClick}>
-        <img src={icon} alt="" />
-        <div className={style.choice}>
-          請 選 擇
-        </div>
-      </div>
-      <div>
-        {isAppear && <Comp.Combobox />}
-      </div>
+      <Comp.ComboboxName />
+      <div style={{ height: '10px' }} />
+      <Comp.ComboboxUi />
       {/* <h3>Contribute</h3>
       <Comp.Contribute /> */}
       {/* <h3>Switch</h3>
