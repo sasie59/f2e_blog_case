@@ -12,20 +12,8 @@ export const ComponentPage = () => {
       <Comp.ComboboxName />
       <div style={{ height: '10px' }} />
       <Comp.ComboboxUi />
-      {/* <h3>Contribute</h3>
-      <Comp.Contribute /> */}
-      {/* <h3>Switch</h3>
-      <Comp.Switch>
-        <div className={style.design}>設計分享</div>
-        <div className={style.proposal}>提案</div>
-      </Comp.Switch>
-      <div style={{ height: '10px' }} />
-      <Comp.Switch>
-        <div className={style.change}>
-          <div className={style.ngised}>設計分享</div>
-          <div className={style.lasoporp}>提案</div>
-        </div>
-      </Comp.Switch> */}
+      <h3>Switch</h3>
+      <Comp.Switch />
       {/* <div>
         <h3>Message</h3>
         <div style={{ display: 'flex' }}>
