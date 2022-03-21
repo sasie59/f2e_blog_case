@@ -8,9 +8,11 @@ export const ComponentPage = () => {
       <h2>ComponentPage</h2>
       <h3>header</h3>
       <Comp.Header />
+      <h3>combobox</h3>
+      <Comp.Combobox />
       {/* <h3>Contribute</h3>
       <Comp.Contribute /> */}
-      <h3>Switch</h3>
+      {/* <h3>Switch</h3>
       <Comp.Switch>
         <div className={style.design}>設計分享</div>
         <div className={style.proposal}>提案</div>
@@ -21,7 +23,7 @@ export const ComponentPage = () => {
           <div className={style.ngised}>設計分享</div>
           <div className={style.lasoporp}>提案</div>
         </div>
-      </Comp.Switch>
+      </Comp.Switch> */}
       {/* <div>
         <h3>Message</h3>
         <div style={{ display: 'flex' }}>
