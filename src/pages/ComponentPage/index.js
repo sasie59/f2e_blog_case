@@ -14,71 +14,17 @@ export const ComponentPage = () => {
       <Comp.ComboboxUi />
       <h3>Switch</h3>
       <Comp.Switch />
-      {/* <div>
-        <h3>Message</h3>
-        <div style={{ display: 'flex' }}>
-          <Comp.Message>
-            <div className={style.message}>
-              <div className={style.text}>請先登入才能發文</div>
-              <div className={style.choice}>
-                <div className={style.exit}>離開</div>
-                <div className={style.space} />
-                <div className={style.login}>登入</div>
-              </div>
-            </div>
-          </Comp.Message>
-          <Comp.Message>
-            <div className={style.message}>
-              <div className={style.text}>確定要刪除專案？</div>
-              <div className={style.choice}>
-                <div className={style.exit}>取消</div>
-                <div className={style.space} />
-                <div className={style.login}>確定</div>
-              </div>
-            </div>
-          </Comp.Message>
-          <Comp.Message>
-            <div className={style.message}>
-              <div className={style.text}>
-                <div style={{ width: '162px' }} >
-                  發文次數己超過限制
-                </div>
-              </div>
-              <div className={style.choice}>
-                <div className={style.exit}>取消</div>
-                <div className={style.space} />
-                <div className={style.login}>確定</div>
-              </div>
-            </div>
-          </Comp.Message>
-        </div>
-        <div style={{ display: 'flex', margin: '10px' }}>
-          <Comp.Message>
-            <div className={style.bigMessage}>
-              <div className={style.text}>
-                <div style={{ width: '186px' }}>
-                  Google雲端容量已滿，請清出空間後再發文。
-                </div>
-              </div>
-              <div className={style.choice}>
-                <div className={style.exit}>取消</div>
-                <div className={style.space} />
-                <div className={style.login}>確定</div>
-              </div>
-            </div>
-          </Comp.Message>
-          <Comp.Message>
-            <div className={style.bigMessage}>
-              <div className={style.text}>
-                <div style={{ width: '144px' }}>
-                  必填項目未填寫，請填寫後再發佈。
-                </div>
-              </div>
-              <div className={style.sure}>確定</div>
-            </div>
-          </Comp.Message>
-        </div >
-      </div> */}
-    </div >
+      <h3>Message</h3>
+      <Comp.Message>
+        <Comp.Popup
+          cancelText='離開'
+          confirmText='登入'
+        >
+          {/* 確定要刪除專案？ */}
+          {/* 必填項目未填寫，<br />請填寫後再發佈。 */}
+          Google雲端容量已滿， <br />請清出空間後再發文。
+        </Comp.Popup>
+      </Comp.Message>
+    </div>
   )
 }
