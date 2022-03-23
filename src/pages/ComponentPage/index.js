@@ -28,7 +28,7 @@ export const ComponentPage = () => {
       <h3>Card</h3>
       <Comp.Card />
       <h3>Content</h3>
-      <Comp.Content></Comp.Content>
+      <Comp.Content />
     </div>
   )
 }
