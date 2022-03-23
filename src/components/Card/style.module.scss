@@ -1,0 +1,36 @@
+.Card {
+  margin: 0 auto;
+  width: 310px;
+  height: 150px;
+  display: flex;
+  background: #F9F9F9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  .content {
+    font-size: 14px;
+    color: #313131;
+    margin: 16px 12px 0 16px;
+    .author {
+      display: flex;
+      img {
+        margin-right: 8px;
+      }
+      .name {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .title {
+      margin: 4px 0;
+    }
+    .innerText {
+      font-size: 14px;
+      color: #919191;
+      line-height: 17px;
+    }
+  }
+  .img {
+    margin-top: 16px; 
+    margin-right: 16px;
+  }
+}

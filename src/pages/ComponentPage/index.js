@@ -25,6 +25,10 @@ export const ComponentPage = () => {
           Google雲端容量已滿， <br />請清出空間後再發文。
         </Comp.Popup>
       </Comp.Message>
+      <h3>Card</h3>
+      <Comp.Card />
+      <h3>Content</h3>
+      <Comp.Content></Comp.Content>
     </div>
   )
 }
