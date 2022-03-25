@@ -22,9 +22,7 @@ export function Content() {
           <div className={style.del}>刪    除</div>
         </div>
       </div>
-      <div className={style.img}>
-        <img src={photo} alt="" />
-      </div>
+      <div className={style.img} />
       <div className={style.innerText}>
         <div className={style.remark}>
           <img src={cc} alt="" />
