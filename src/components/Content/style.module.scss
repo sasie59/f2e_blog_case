@@ -15,21 +15,27 @@
         margin: 23px 0 18px 0;
         .name {
           margin-bottom: 2px;
+          font-size: 16px;
+          color: #313131;
         }
         .time {
-
+          font-size: 14px;
+          color: #919191;
         }
       }
     }
+    .space {
+      width: 436px;
+    }
     .fix {
       display: flex;      
-      margin: 30px 0 19px;
-      
+      margin: 30px 18px 19px;
+      font-size: 20px;
       .edit {
-
+        color: #313131;
       }
       .del {
-        
+        color: #919191;
       }
       .space {
         width: 35px;
@@ -41,5 +47,69 @@
   }
   .innerText {
     height: 337px;
+    .remark {
+      display: flex;
+      margin: 29px 0 21px 21px;
+      img {
+        margin-right: 7.43px;
+      }
+
+      .text {
+        span {
+          color: #00a3ff;
+        }
+      }
+    }
+    .title {
+      margin: 21px 0 16px 20px;
+      height: 26px;
+      font-size: 18px;
+      color: #313131;
+    }
+    .innerText {
+      margin: 16px 16px 16px 20px;
+      height: 46px;
+    }
+    a {
+      color: #00a3ff;
+      margin: 16px 16px 23px 20px;
+    }
+    .platform {
+      display: flex;
+      margin: 17px 0 0 22px;
+      .html {
+        padding: 4px 10px;
+      }
+      .Android {
+        padding: 6px 10px;
+      }
+      & > * {
+        color: #919191;
+        background-color: #edeef0;
+        border-radius: 6px;
+        margin-right: 8px;
+      }
+    }
+    .line {
+      border: 5px solid #f8f8f8;
+      margin: 27px 0 16.5px;
+    }
+    .footer {
+      display: flex;
+      margin: 16.5px 0 23.5px 21.5px;
+      color: #313131;
+      .eye {
+        width: 21px;
+        height: 21px;
+        background-color: #333;
+        border-radius: 100%;
+      }
+      .number {
+        margin: 0 5px 0 11.5px;
+      }
+      .saw {
+
+      }
+    }
   }
 }
