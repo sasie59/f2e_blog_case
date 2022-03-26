@@ -2,6 +2,11 @@ import React from 'react';
 import style from './style.module.scss';
 import * as Comp from "components";
 
+import head from '../../components/Card/head.png';
+import photo from '../../components/Card/photo.png';
+import bgc from '../../components/Content/photo.png';
+import CC from '../../components/Content/CC.png';
+
 export const ComponentPage = () => {
   return (
     <div className={style.ComponentPage}>
@@ -9,11 +14,13 @@ export const ComponentPage = () => {
       <h3>header</h3>
       <Comp.Header />
       <h3>combobox</h3>
-      <Comp.ComboboxName />
-      <div style={{ height: '10px' }} />
-      <Comp.ComboboxUi />
+      <Comp.Combobox width={783} list={['請 選 擇', '姓名標示', '姓名標示－非商業性']} />
+      <Comp.Combobox width={561} list={['請 選 擇', 'UI 投搞', '提     案']} />
       <h3>Switch</h3>
-      <Comp.Switch />
+      <Comp.Switch
+        design='設計分享'
+        proposal=' 提案'
+      />
       <h3>Message</h3>
       <Comp.Message>
         <Comp.Popup
@@ -26,9 +33,30 @@ export const ComponentPage = () => {
         </Comp.Popup>
       </Comp.Message>
       <h3>Card</h3>
-      <Comp.Card />
+      <Comp.Card
+        head={head}
+        photo={photo}
+        name={'Doris Wang'}
+        title={'我的輕旅行'}
+        innerText={'開啟定位，搜尋附近藝文活動與台灣景點，簡單快速的規劃功能，輕鬆安排旅程...'}
+      />
       <h3>Content</h3>
-      <Comp.Content />
+      <Comp.Content
+        head={head}
+        name={'Doris Wang'}
+        time={'2021/09/30'}
+        bgc={bgc}
+        CC={CC}
+        text={'本著作係採用'}
+        text1={'授權.'}
+        insideText={'創用 CC 姓名標示 3.0 台灣 授權條款'}
+        title={'我的輕旅行'}
+        innerText={'開啟定位，搜尋附近藝文活動與台灣景點，簡單快速的規劃功能，輕鬆安排旅程；上傳照片，記錄美好的回憶。'}
+        link={'https://www.figma.com/file/cuQhxmhzBXMOGysKvrTHmO/Hermes?node-id=567%3A3885'}
+        number={236}
+        html={'網頁'}
+        platform={'Android'}
+      />
     </div>
   )
 }
