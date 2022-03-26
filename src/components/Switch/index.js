@@ -1,15 +1,29 @@
 import React, { useState } from 'react'
 import style from './style.module.scss';
 
-export function Switch() {
-  const [choice, setChoice] = useState(true);
-  const handleClick = () => {
-    setChoice(!choice);
+export function Switch(props) {
+  const [choice, setChoice] = useState('proposal');
+
+  const handleClick = (name) => {
+    setChoice(name);
+    // console.warn(name);
   }
   return (
-    <div className={style.Switch} onClick={handleClick}>
-      <div className={choice ? style.design : style.ngised}>設計分享</div>
-      <div className={choice ? style.proposal : style.lasoporp}>提案</div>
+    <div className={style.Switch}>
+      <div
+        name='design'
+        onClick={handleClick.bind(this, 'design')}
+        className={choice === 'design' ? style.design : style.ngised}
+      >
+        {props.design}
+      </div>
+      <div
+        onClick={handleClick.bind(this, 'proposal')}
+        name='proposal'
+        className={choice === 'proposal' ? style.lasoporp : style.proposal}
+      >
+        {props.proposal}
+      </div>
     </div>
   )
 }
