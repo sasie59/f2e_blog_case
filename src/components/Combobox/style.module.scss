@@ -1,0 +1,66 @@
+.Combobox {
+  margin: 0 auto;
+  // max-width: 783px;
+  .box {
+    border-radius: 8px;
+    line-height: 23px;
+    color: #313131;
+    background: #F6F7F9;
+    border-radius: 8px;
+    position: relative;
+    .choice {
+      margin-left: 20px;
+      padding-top:  14px;
+      padding-bottom: 15px;
+    }
+    img {
+      width: 12px;
+      height: 10.91px;
+      position: absolute;
+      right: 27.18px;
+      top: 21.09px;
+    }
+  }
+  .fakeSelect {
+    position: relative;
+    background-color: #F6F7F9;
+    border-radius: 8px;
+    padding-top:  15px;
+    padding-bottom: 17px;
+    .fakeLi {
+      padding-left: 20px;
+      margin-bottom: 24px;
+    }
+    .fakeLi:hover {
+      background-color: #313131;;
+      color: #fff;
+      // padding-top: 6px;
+      // padding-bottom: 9px;
+    }
+    img {
+      width: 12px;
+      height: 10.91px;
+      position: absolute;
+      right: 27.18px;
+      top: 21.09px;
+    }
+  }
+}
+
+// 桌機
+@media (min-width: 1200px) {
+  
+}
+
+// 平版
+@media (min-width: 768px)and (max-width: 1199px) {
+  .Combobox {
+    // max-width: 655px;
+  }
+}
+// 手機
+@media (max-width: 767px) {
+  .Combobox {
+    max-width: 300px;
+  }
+}

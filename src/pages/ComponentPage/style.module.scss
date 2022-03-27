@@ -1,34 +1,44 @@
 .ComponentPage {
+  .myCombobox {
+    // border: 1px solid red;
+  }
+  
+  .myCombobox2 {
+    // border: 5px solid #880;
+    width: 80%;
+  }
   // background-color: #000;
   // opacity: 0.8;
   // height: 100vh;
-  .fakeSelect {
-    margin: 0 auto;
-    max-width: 783px;
-    background: #F6F7F9;
-    border-radius: 8px;
-    padding-top:  14px;
-    padding-bottom: 15px;
-    position: relative;
-    .choice {
-      margin-left: 20px;
-    }
-    img {
-      width: 12px;
-      height: 10.91px;
-      position: absolute;
-      right: 27.18px;
-      top: 21.09px;
-    }
-  }
+  // .fakeSelect {
+  //   margin: 0 auto;
+  //   max-width: 783px;
+  //   background: #F6F7F9;
+  //   border-radius: 8px;
+  //   padding-top:  14px;
+  //   padding-bottom: 15px;
+  //   position: relative;
+  //   .choice {
+  //     margin-left: 20px;
+  //   }
+  //   img {
+  //     width: 12px;
+  //     height: 10.91px;
+  //     position: absolute;
+  //     right: 27.18px;
+  //     top: 21.09px;
+  //   }
+  // }
 }
+
+
 
 
 @media (min-width: 768px)and (max-width: 1199px) {
   .ComponentPage {
-    .fakeSelect {
-      max-width: 655px;
-    }
+    // .fakeSelect {
+    //   max-width: 655px;
+    // }
   }
 }
 
