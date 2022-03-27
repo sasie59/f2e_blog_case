@@ -1,0 +1,14 @@
+.CheckBox {
+  margin: 0 auto;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  .insideBox {
+    margin: 7px;
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;
+    background-color: #313131;
+  }
+}

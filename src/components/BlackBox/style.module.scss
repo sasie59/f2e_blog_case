@@ -1,0 +1,20 @@
+.BlackBox {
+  position: relative;
+  margin: 0 auto;
+  background-color: #313131;
+  width: 127px;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  text-align: center;
+  padding: 27px 31.5px;
+  & > div:first-child {
+    margin-bottom: 24px;
+  }
+  .logOut {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+  }
+}
