@@ -1,16 +1,59 @@
 import React from 'react';
 import style from './style.module.scss';
+import * as Comp from '../../components';
+import arrow from './arrow.png';
+import prev from './prev.png';
+import next from './next.png';
+import head from '../../components/Card/head.png';
+import photo from '../../components/Card/photo.png';
+const text = '開啟定位，搜尋附近藝文活動與台灣景點，簡單快速的規劃功能，輕鬆安排旅程...'
 
 export function HomePage() {
   return (
     <div className={style.layout}>
-      <header>
-
-      </header>
-      <main>home</main>
-      <footer>
-        <div className={style.provenance}>Idea Share © Code: Samick & Michael   /  Design: KT</div>
-      </footer>
+      <Comp.Header />
+      <div className={style.type}>
+        <Comp.Switch
+          design='設計分享'
+          proposal='提案'
+        />
+        <div className={style.space} />
+        <div className={style.newest}>
+          <div style={{ width: '61px', textAlignLast: 'justify' }}>最新</div>
+          <img src={arrow} alt="" />
+        </div>
+      </div>
+      <div className={style.content}>
+        <div className={style.row}>
+          <Comp.Card
+            head={head}
+            photo={photo}
+            name={'Doris Wang'}
+            title={'我的輕旅行'}
+            innerText={text}
+          />
+          <Comp.Card
+            head={head}
+            photo={photo}
+            name={'Doris Wang'}
+            title={'我的輕旅行'}
+            innerText={text}
+          />
+          <Comp.Card
+            head={head}
+            photo={photo}
+            name={'Doris Wang'}
+            title={'我的輕旅行'}
+            innerText={text}
+          />
+        </div>
+      </div>
+      <div className={style.page}>
+        <img src={prev} alt="" />
+        <div className={style.number}>1</div>
+        <img src={next} alt="" />
+      </div>
+      <div className={style.footer} />
     </div>
   )
 }
