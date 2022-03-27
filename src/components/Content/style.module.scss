@@ -1,7 +1,5 @@
 .Content {
   margin:  0 auto;
-  width: 768px;
-  height: 991px;
   border: 1px solid #aaa;
   .title {
     height: 78px;
@@ -25,42 +23,26 @@
       }
     }
     .space {
-      width: 436px;
+      flex: 1;
     }
     .fix {
-      display: flex;      
-      margin: 30px 18px 19px;
+      display: flex; 
       font-size: 20px;
+      margin-top: 30px;
+      margin-right: 18px;
       .edit {
         color: #313131;
+        margin-right: 35px;
       }
       .del {
         color: #919191;
       }
-      .space {
-        width: 35px;
-      }
     }
   }
   .img {
-    // background-image: url(./photo.png);
-      width: 768px;
-      height: 576px;
+      width: 100%;
   }
   .innerText {
-    // height: 337px;
-    .remark {
-      display: flex;
-      margin: 29px 0 21px 21px;
-      img {
-        margin-right: 7.43px;
-      }
-      .text {
-        span {
-          color: #00a3ff;
-        }
-      }
-    }
     .title {
       margin: 21px 0 16px 20px;
       height: 26px;
@@ -69,48 +51,29 @@
     }
     .innerText {
       margin: 16px 16px 16px 20px;
-      height: 46px;
     }
     a {
       color: #00a3ff;
-      margin: 16px 16px 23px 20px;
+      margin-left: 20px;
     }
-    .platform {
+    .outTag {
       display: flex;
-      margin: 17px 0 0 22px;
-      .html {
-        padding: 4px 10px;
-      }
-      .Android {
-        padding: 6px 10px;
-      }
-      & > * {
-        color: #919191;
-        background-color: #edeef0;
-        border-radius: 6px;
+      margin-top: 17px;
+      margin-left: 22px;
+      margin-bottom: 27px;
+      .tag {
+        display: flex;
         margin-right: 8px;
+        & > * {
+          color: #919191;
+          background-color: #edeef0;
+          border-radius: 6px;
+          padding: 4px 10px;
+        }
       }
     }
     .line {
       border: 5px solid #f8f8f8;
-      margin: 27px 0 16.5px;
-    }
-    .footer {
-      display: flex;
-      margin: 16.5px 0 23.5px 21.5px;
-      color: #313131;
-      .eye {
-        width: 21px;
-        height: 21px;
-        background-color: #333;
-        border-radius: 100%;
-      }
-      .number {
-        margin: 0 5px 0 11.5px;
-      }
-      .saw {
-
-      }
     }
   }
 }
@@ -119,46 +82,28 @@
 // 平版
 @media (min-width: 768px)and (max-width: 1199px) {
   .Content {
-    max-width: 670px;
     .img {
-      max-width: 670px;
-      max-height: 502px;
     }
     .title {
-      .space {
-        width: 337.5px;
-      }
       .fix {
         font-size: 16px;
-        margin: 30px 29.04px 25px 0;
-        .space {
-          width: 46.07px;
-        }
+        margin-right: 29.04px;
       }
     }
     .innerText {
-      padding-bottom: 19px;
-      .remark {
-        margin-top: 31px;
-      }
       .title {
 
       }
       .innerText {
-        margin-right: 26.14px;
       }
       a {
-        display: inline-block;
-        margin: 0 33.05px 16px 20.03px;
       }
-      .platform {
-        margin-top: 22px; 
+      .outTag {
+        margin-top: 16px;
+        .tag {
+        }
       }
       .line {
-        margin-bottom: 18.5px;
-      }
-      .footer {
-        margin: 0 0 19.5px 21.55px;
       }
     }
   }
@@ -167,8 +112,6 @@
 // 手機
 @media (max-width: 767px) {
   .Content {
-    max-width: 360px;
-    max-height: 807px;
     .title {
       height: 78px;
       .author {
@@ -178,18 +121,11 @@
             
           }
           .time {
-
           }
         }
       }
-      .space {
-        width: 40px;
-      }
       .fix {
-        margin: 30px 17px 25px 40px;
-        .space {
-          width: 46px;
-        }
+        margin-right: 17px;
         .edit {
           width: 47px;
         }
@@ -199,48 +135,24 @@
       }
     }
     .img {
-      width: 360px;
-      height: 270px;
     }
     .innerText {
-      padding-bottom:17.5px;
-      .remark {
-        display: flex;
-        flex-direction: column;
-        margin: 29px 7px 16px 16px;
-        img {
-          width: 88.57px;
-          height: 31px;
-          margin-bottom: 5px;
-        }
-        .text {
-          font-size: 14px;
-          line-height: 20px;
-          width: 343px;
-        }
-      }
       .title {
         margin: 16px;
       }
       .innerText {
-        margin: 16px;
-        width: 328px;
       }
       a {
-        line-height: 19px;
         display: inline-block;
-        word-break: break-word;
-        width: 328px;
-        margin: 16px;
+        margin-left: 16px;
       }
-      .platform {
-        margin: 16px;
+      .outTag {
+        margin-top: 16px;
+        margin-bottom: 28px;
+        .tag {
+        }
       }
       .line {
-        margin: 28px 0 16px;
-      }
-      .footer {
-        margin: 17.5px
       }
     }
   }

@@ -1,0 +1,39 @@
+.remark {
+  display: flex;
+  margin: 29px 0 21px 21px;
+  img {
+    margin-right: 7.43px;
+  }
+  .text {
+    // vertical-align: bottom;
+    padding-top: 9px;
+    span {
+      color: #00a3ff;
+    }
+  }
+}
+
+@media (min-width: 768px)and (max-width: 1199px) {
+  .remark {
+    margin-top: 31px;
+  }
+}
+
+@media (max-width: 767px) {
+  .remark {
+    display: flex;
+    flex-direction: column;
+    margin: 29px 7px 16px 16px;
+    img {
+      width: 88.57px;
+      height: 31px;
+      margin-bottom: 5px;
+    }
+    .text {
+      font-size: 14px;
+      line-height: 20px;
+      width: 343px;
+    }
+  }
+}
+
