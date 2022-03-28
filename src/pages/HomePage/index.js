@@ -7,7 +7,23 @@ import next from './next.png';
 import head from '../../components/Card/head.png';
 import photo from '../../components/Card/photo.png';
 const text = '開啟定位，搜尋附近藝文活動與台灣景點，簡單快速的規劃功能，輕鬆安排旅程...'
-
+const imgArr = [
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+  { head: head, photo: photo },
+]
 export function HomePage() {
   return (
     <div className={style.layout}>
@@ -24,31 +40,20 @@ export function HomePage() {
         </div>
       </div>
       <div className={style.content}>
-        <div className={style.row}>
-          <Comp.Card
-            head={head}
-            photo={photo}
-            name={'Doris Wang'}
-            title={'我的輕旅行'}
-            innerText={text}
-          />
-          <Comp.Card
-            head={head}
-            photo={photo}
-            name={'Doris Wang'}
-            title={'我的輕旅行'}
-            innerText={text}
-          />
-          <Comp.Card
-            head={head}
-            photo={photo}
-            name={'Doris Wang'}
-            title={'我的輕旅行'}
-            innerText={text}
-          />
+        <div className={style.item}>
+          {imgArr.map(item =>
+            <Comp.Card
+              head={item.head}
+              photo={item.photo}
+              name={'Doris Wang'}
+              title={'我的輕旅行'}
+              innerText={text}
+            />
+          )}
         </div>
       </div>
       <div className={style.page}>
+        <div className={style.space} />
         <img src={prev} alt="" />
         <div className={style.number}>1</div>
         <img src={next} alt="" />

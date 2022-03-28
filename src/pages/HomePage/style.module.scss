@@ -1,5 +1,5 @@
 .layout {
-  // position: relative;
+  height: 100%;
   .type {
     display: flex;
     margin-top: 49px;
@@ -22,19 +22,22 @@
       }
     }
   }
-  .content {
+  .content {  
     margin-top: 29px;
-    margin-left: 163px;
-    margin-right: 163px;
-    .row {
+    padding-left: 10%;
+    .item {
       display: flex;
+      flex-wrap: wrap;
     }
   }
   .page {
     display: flex;
+    margin-right: 10%;;
     margin-top: 72px;
     margin-bottom: 55px;
-    margin-left: 1000px;
+    .space {
+      flex: 1;
+    }
     .number {
       margin: 0 33px;
     }
@@ -46,8 +49,5 @@
   .footer {
     height: 59px;
     background-color: #313131;
-    margin-bottom: 0;
-    // position:absolute;
-    // bottom: 0;
   }
 }
