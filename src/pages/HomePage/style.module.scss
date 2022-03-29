@@ -24,7 +24,8 @@
   }
   .content {  
     margin-top: 29px;
-    padding-left: 10%;
+    padding-left: 163px;
+    // padding-left: 10%;
     .item {
       display: flex;
       flex-wrap: wrap;
@@ -46,8 +47,70 @@
       height: 15px;
     }
   }
+  .imgWrite {
+    display: none;
+  }
   .footer {
     height: 59px;
     background-color: #313131;
+  }
+}
+
+// 平版
+@media (min-width: 844px)and (max-width: 1199px) {
+  .layout {
+    .type {
+
+    }
+    .content {
+      margin-top: 28px;
+      padding-left: 68px;
+      padding-right: 68px;
+      .item {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+  
+// 手機
+@media (max-width:767px) {
+  .layout {
+    position: relative;
+    .type {
+      .newest {
+        display: none;
+      }
+    }
+    .content {
+      margin-top: 22px;
+      padding-left: 25px;
+      padding-right: 25px;
+      .item {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .page {
+
+    }
+    .imgWrite {
+      display: block;
+      position: absolute;
+      top: 540px;
+      right: 75px;
+      width: 58px;
+      height: 58px;
+      background: #313131;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+      border-radius: 50px;
+      img {
+        width: 50%;
+        height: 50%;
+        margin-top: 14px;
+        margin-left: 14px;
+      }
+    }
   }
 }

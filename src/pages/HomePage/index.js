@@ -6,6 +6,7 @@ import prev from './prev.png';
 import next from './next.png';
 import head from '../../components/Card/head.png';
 import photo from '../../components/Card/photo.png';
+import pen from './Icon/pen.png';
 const text = '開啟定位，搜尋附近藝文活動與台灣景點，簡單快速的規劃功能，輕鬆安排旅程...'
 const imgArr = [
   { head: head, photo: photo },
@@ -57,6 +58,9 @@ export function HomePage() {
         <img src={prev} alt="" />
         <div className={style.number}>1</div>
         <img src={next} alt="" />
+      </div>
+      <div className={style.imgWrite}>
+        <img src={pen} alt="" />
       </div>
       <div className={style.footer} />
     </div>
