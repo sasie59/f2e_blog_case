@@ -1,6 +1,7 @@
 .Content {
   margin:  0 auto;
-  border: 1px solid #aaa;
+  // border: 1px solid #aaa;
+  background-color: #fff;
   .title {
     height: 78px;
     display: flex;
@@ -34,6 +35,9 @@
         color: #313131;
         margin-right: 35px;
       }
+      img {
+        margin-bottom: 15px;
+      }
       .del {
         color: #919191;
       }
@@ -43,6 +47,7 @@
       width: 100%;
   }
   .innerText {
+    // background-color: #fff;
     .title {
       margin: 21px 0 16px 20px;
       height: 26px;

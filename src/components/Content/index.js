@@ -14,8 +14,9 @@ export function Content(props) {
         </div>
         <div className={style.space} />
         <div className={style.fix}>
-          <div className={style.edit}>編    輯</div>
-          <div className={style.del}>刪    除</div>
+          <div className={style.edit}>{props.edit}</div>
+          <img src={props.img} alt="" />
+          <div className={style.del}>{props.del}</div>
         </div>
       </div>
       <img className={style.img} src={props.bgc} alt="" />
