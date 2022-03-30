@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path='/component' exact element={<Page.ComponentPage />}></Route>
         <Route path='/home' exact element={<Page.HomePage />}></Route>
+        <Route path='/project' exact element={<Page.ProjectPage />}></Route>
         <Route path="/" exact element={<Page.HomePage />}></Route>
       </Routes>
     </HashRouter>
