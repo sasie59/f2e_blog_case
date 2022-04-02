@@ -2,12 +2,24 @@ import React from 'react'
 import style from './style.module.scss';
 import * as Comp from '../../components';
 import addImg from './addImg.png';
+import prev from './prev.png'
 export function Contribute() {
   return (
     <div className={style.layout}>
-      <Comp.Header />
+      <div className={style.Header}>
+        <Comp.Header />
+      </div>
+      <div className={style.deviceHeader}>
+        <img src={prev} alt="" />
+        <div className={style.space} />
+        <div className={style.text}>
+          投稿 / 提案
+        </div>
+        <div className={style.space} />
+      </div>
       <div className={style.Contribute}>
         <div className={style.firstRow}>
+          <div className={style.firstDescribe}>*必選</div>
           <Comp.Combobox className={style.myCombobox1} list={['請 選 擇', 'UI 投搞', '提     案']} />
           <div className={style.photo}>
             <img src={addImg} alt="" />

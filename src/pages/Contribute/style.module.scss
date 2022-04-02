@@ -1,23 +1,26 @@
 .layout {
   background-color: #f8f8f8;
+  .deviceHeader {
+    display: none;
+  }
   .Contribute {
+    margin: 102px auto 136px;
     width: 1000px;
     background-color: #fff;
-    margin: 102px auto 136px;
     .firstRow {
       display: flex;
+      position: relative;
       .myCombobox1 {
-        width: 55%;
         margin-top: 189px;
+        width: 55%;
       }
-      &::before{
-        position: absolute;
-        content: '*必選';
+      .firstDescribe {
         color: #FF688C;
         width: 50px;
         height: 20px;
         margin-top: 163px;
-        margin-left: 75px;
+        position:absolute;
+        left: 75px;
       }
       .photo {
         width: 192px;
@@ -25,8 +28,7 @@
         background: #EDEEF0;
         border-radius: 13px;
         margin-top: 51px;
-        margin-right: 114px;
-        
+        margin-right: 110px;
         .addImg {
           margin-left: 55px;
           color: #919191;
@@ -160,6 +162,109 @@
         margin-right: 75px;
       }
 
+    }
+  }
+}
+
+// 平版
+@media (min-width: 768px)and (max-width: 1199px) {
+  .layout {
+    .Header {
+      display: none;
+    }
+    .deviceHeader {
+      font-size: 22px;
+      height: 101px;
+      background: #F8F8F8;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.03);
+      display: flex;
+      img {
+        display: block;
+        width: 3%;
+        height: 20%;
+        margin-left: 16px;
+        margin-top: 44px;
+      }
+      .space {
+        flex:1;
+      }
+      .text {
+        margin-top: 35px;
+      }
+    }
+    .Contribute {
+      margin: 36px auto 46px;
+      padding-right: 41px;
+      .types {
+        .CheckBoxArr {
+          .item {
+            margin-right: 41px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 手機
+@media (max-width: 767px) {
+  .layout {
+    .Header {
+      display: none;
+    }
+    .deviceHeader {
+      font-size: 22px;
+      height: 101px;
+      background: #F8F8F8;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.03);
+      display: flex;
+      img {
+        display: block;
+        width: 3%;
+        height: 20%;
+        margin-left: 16px;
+        margin-top: 44px;
+      }
+      .space {
+        flex:1;
+      }
+      .text {
+        margin-top: 35px;
+      }
+    }
+    .Contribute {
+      margin: 24px 0 0 0;
+      padding-left: 30px;
+      .firstRow {
+        flex-direction: column-reverse;
+        .firstDescribe {
+          
+        }
+        .myCombobox1 {
+          margin-top: 42px;
+          // margin-left: 60px;
+        }
+        .photo {
+          width: 153px;
+          height: 153px;
+          margin-left: 70px;
+          display: flex;
+          flex-direction: column;
+          .addImg {
+            margin-left: 43px;
+          }
+          img {
+            width: 60%;
+          }
+          .imgDescribe {
+            position: absolute;
+            top: 110px;
+            left: 250px;
+            // right:150px;
+            // top: 240px;
+          }
+        }
+      }
     }
   }
 }
