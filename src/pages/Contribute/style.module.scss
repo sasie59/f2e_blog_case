@@ -1,8 +1,73 @@
 .layout {
+  background-color: #f8f8f8;
   .Contribute {
     width: 1000px;
     height: 1359px;
-    background-color: red;
-    margin: 102px auto;
+    background-color: #fff;
+    margin: 102px auto 136px;
+    .firstRow {
+      display: flex;
+      .myCombobox1 {
+        width: 55%;
+        margin-top: 189px;
+      }
+      &::before{
+        position: absolute;
+        content: '*必選';
+        color: #FF688C;
+        width: 50px;
+        height: 20px;
+        margin-top: 163px;
+        margin-left: 75px;
+      }
+      .photo {
+        width: 192px;
+        height: 192px;
+        background: #EDEEF0;
+        border-radius: 13px;
+        margin-top: 51px;
+        margin-right: 114px;
+        
+        .addImg {
+          margin-left: 55px;
+          color: #919191;
+        }
+        img {
+          margin-top: 37px;
+          margin-left: 35px;
+        }
+        .imgDescribe {
+          color: #FF688C;
+          margin-top: 50px;
+          width: 230px;
+          font-style: 14px;
+        }
+      }
+    }
+    .secRow {
+      margin-top: 69px;
+      .secDescribe {
+        margin-left: 75px;
+      }
+      .myCombobox2 {
+        margin-top: 10px;
+        width: 86%;
+      }
+    }
+    .name{
+      margin-top: 77px;
+      margin-left: 70px;
+      .nameDescribe {
+        
+      }
+      input {
+        margin-top: 8px;
+        width: 854px;
+        height: 54px;
+        background: #F6F7F9;
+        border-radius: 8px;
+        border: 1px solid #fff;
+      }
+    }
   }
 }
