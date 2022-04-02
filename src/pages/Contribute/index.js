@@ -39,10 +39,31 @@ export function Contribute() {
           </div>
           <input type="text" />
         </div>
-        <div className={style.types}></div>
-        <div className={style.fileLink}></div>
-        <div className={style.describe}></div>
+        <div className={style.types}>
+          <div className={style.typesDescribe}>專案分類</div>
+          <div className={style.CheckBoxArr}>
+            {['網頁', 'IOS', 'Android', '軟體', '元件', '其他介面'].map(item =>
+              <div key={item} className={style.item}>
+                <Comp.CheckBox />
+                <div className={style.text}>
+                  {item}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+        <div className={style.fileLink}>
+          <div>視覺稿</div>
+          <input type="text" />
+          <div className={style.text}>附上視覺稿連結，方便工程師了解詳細視覺</div>
+        </div>
+        <div className={style.describe}>
+          <div>專案說明</div>
+          <input type="text" />
+          <div className={style.text}>詳細說明專案，讓工程師更了解專案內容。</div>
+        </div>
         <div className={style.release}>
+          <div className={style.space} />
           <div className={style.cancel}>取消</div>
           <div className={style.submit}>發怖</div>
         </div>

@@ -2,7 +2,6 @@
   background-color: #f8f8f8;
   .Contribute {
     width: 1000px;
-    height: 1359px;
     background-color: #fff;
     margin: 102px auto 136px;
     .firstRow {
@@ -40,7 +39,7 @@
           color: #FF688C;
           margin-top: 50px;
           width: 230px;
-          font-style: 14px;
+          font-size: 14px;
         }
       }
     }
@@ -48,6 +47,7 @@
       margin-top: 69px;
       .secDescribe {
         margin-left: 75px;
+        color: #313131;
       }
       .myCombobox2 {
         margin-top: 10px;
@@ -58,9 +58,12 @@
       margin-top: 77px;
       margin-left: 70px;
       .nameDescribe {
-        
+        color: #313131;
       }
       input {
+        font-size: 16px;
+        padding-top: 19px;
+        padding-left: 20px;
         margin-top: 8px;
         width: 854px;
         height: 54px;
@@ -68,6 +71,95 @@
         border-radius: 8px;
         border: 1px solid #fff;
       }
+    }
+    .types {
+      color: #313131;
+      margin-top: 79px;
+      margin-left: 70px;
+      .typesDescribe {
+      }
+      .CheckBoxArr {
+        display: flex;
+        margin-top: 20px;
+        .item { 
+          display: flex;
+          margin-right: 58px;
+          .text {
+            margin-left: 8px;
+          }
+        }
+      }    
+    }
+    .fileLink {
+      margin-left: 70px;
+      margin-top: 67px;
+      input {
+        font-size: 16px;
+        padding-top: 15px;
+        padding-right: 24px;
+        padding-left: 20px;
+        font-size: 16px;
+        margin-top: 8px;
+        width: 854px;
+        height: 104px;
+        background: #F6F7F9;
+        border-radius: 8px;
+        border: 1px solid #fff;
+      }
+      .text {
+        margin-top: 6px;
+        color: #919191;
+      }
+    }
+    .describe {
+      margin-left: 70px;
+      margin-top: 67px;
+      input {
+        font-size: 16px;
+        margin-top: 8px;
+        padding-top: 15px;
+        padding-right: 24px;
+        padding-left: 20px;
+        width: 854px;
+        height: 256px;
+        background: #F6F7F9;
+        border-radius: 8px;
+        border: 1px solid #fff;
+      }
+      .text {
+        margin-top: 6px;
+        color: #919191;
+      }
+    }
+    .release {
+      display: flex;
+      color: #fff;
+      font-size: 20px;
+      margin-top: 95px;
+      .space {
+        flex: 1;
+      }
+      .cancel {
+        width: 214px;
+        height: 62px;
+        background: #BEBEBE;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+      }
+      .submit {
+        width: 214px;
+        height: 62px;
+        background: #313131;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 75px;
+      }
+
     }
   }
 }
