@@ -1,5 +1,5 @@
 .Combobox {
-  margin: 0 auto;
+  // margin: 0 auto;
   // max-width: 783px;
   .box {
     border-radius: 8px;
@@ -60,6 +60,6 @@
 // 手機
 @media (max-width: 767px) {
   .Combobox {
-    max-width: 300px;
+    max-width: 500px;
   }
 }

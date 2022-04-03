@@ -54,7 +54,7 @@ export function Contribute() {
         <div className={style.types}>
           <div className={style.typesDescribe}>專案分類</div>
           <div className={style.CheckBoxArr}>
-            {['網頁', 'IOS', 'Android', '軟體', '元件', '其他介面'].map(item =>
+            {['網頁', 'I O S', 'Android', '軟體', '元件', '其他介面'].map(item =>
               <div key={item} className={style.item}>
                 <Comp.CheckBox />
                 <div className={style.text}>
