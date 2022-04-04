@@ -76,8 +76,10 @@ export function Contribute() {
         </div>
         <div className={style.release}>
           <div className={style.space} />
-          <div className={style.cancel}>取消</div>
-          <div className={style.submit}>發怖</div>
+          <div className={style.box}>
+            <div className={style.cancel}>取消</div>
+            <div className={style.submit}>發怖</div>
+          </div>
         </div>
       </div>
     </div>

@@ -5,15 +5,14 @@
   }
   .Contribute {
     margin: 102px auto 136px;
-    width: 1000px;
+    padding: 30px 90px;
     background-color: #fff;
     .firstRow {
-      margin-left: 93px;
       display: flex;
       position: relative;
       .myCombobox1 {
         margin-top: 189px;
-        width: 65%;
+        width: 100%;
       }
       .firstDescribe {
         color: #FF688C;
@@ -29,7 +28,6 @@
         border-radius: 13px;
         margin-top: 51px;
         margin-left: 30px;
-        // margin-right: 110px;
         .addImg {
           margin-left: 55px;
           color: #919191;
@@ -41,34 +39,30 @@
         .imgDescribe {
           color: #FF688C;
           margin-top: 50px;
-          width: 230px;
           font-size: 14px;
         }
       }
     }
     .secRow {
       margin-top: 69px;
-      margin-left: 93px;
+      // margin-left: 93px;
       .secDescribe {
         color: #313131;
       }
       .myCombobox2 {
         margin-top: 10px;
-        width: 90%;
+        // width: 90%;
       }
     }
     .name{
       margin-top: 77px;
-      margin-left: 90px;
       .nameDescribe {
         color: #313131;
       }
       input {
         font-size: 16px;
-        padding-top: 19px;
-        padding-left: 20px;
         margin-top: 8px;
-        width: 800px;
+        width: 100%;
         height: 54px;
         background: #F6F7F9;
         border-radius: 8px;
@@ -78,7 +72,7 @@
     .types {
       color: #313131;
       margin-top: 79px;
-      margin-left: 90px;
+      // margin-left: 90px;
       .typesDescribe {
       }
       .CheckBoxArr {
@@ -96,16 +90,11 @@
       }    
     }
     .fileLink {
-      margin-left: 90px;
       margin-top: 67px;
       input {
         font-size: 16px;
-        padding-top: 15px;
-        padding-right: 24px;
-        padding-left: 20px;
-        font-size: 16px;
         margin-top: 8px;
-        width: 800px;
+        width: 100%;
         height: 104px;
         background: #F6F7F9;
         border-radius: 8px;
@@ -117,15 +106,11 @@
       }
     }
     .describe {
-      margin-left: 90px;
       margin-top: 67px;
       input {
         font-size: 16px;
         margin-top: 8px;
-        padding-top: 15px;
-        padding-right: 24px;
-        padding-left: 20px;
-        width: 800px;
+        width: 100%;
         height: 256px;
         background: #F6F7F9;
         border-radius: 8px;
@@ -144,25 +129,26 @@
       .space {
         flex: 1;
       }
-      .cancel {
-        width: 214px;
-        height: 62px;
-        background: #BEBEBE;
-        border-radius: 8px;
+      .box {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 16px;
-      }
-      .submit {
-        width: 214px;
-        height: 62px;
-        background: #313131;
-        border-radius: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 75px;
+        .cancel {
+          padding: 16.5px 73.5px;
+          background: #BEBEBE;
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 16px;
+        }
+        .submit {
+          padding: 16.5px 73.5px;
+          background: #313131;
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+        }
       }
     }
   }
@@ -215,10 +201,10 @@
       display: none;
     }
     .deviceHeader {
-      // width: 1000px;
+      width: 100%;
       font-size: 22px;
       height: 101px;
-      background: #f8f8f8;
+      background: #F8F8F8;
       box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.03);
       display: flex;
       img {
@@ -269,46 +255,40 @@
       }
       .name {
         input {
-          width: 480px;
         }
       }
       .types {
-        // display: flex;
-        // justify-content: center;
         .CheckBoxArr {
           flex-wrap: wrap;
-          width: 500px;
+          width: 100%;
           .item {
             margin-bottom: 24px;
-            margin-right: 80px;
             .text {
             }
           }
         }
       }
       .fileLink {
-        
         input {
-          width: 480px;
         }
       }
       .describe {
         input {
-          width: 480px;
         }
       }
       .release {
-        margin-top: 78px;
-        display: flex;
-        justify-content: center;
         .space {
           display: none;
         }
-        .cancel {
-          width: 145px;
-        }
-        .submit {
-          width: 145px;
+        .box {
+          margin : 0 auto;
+          
+          .cancel {
+            padding: 16.5px 39px;
+          }
+          .submit {
+            padding: 16.5px 39px;
+          }
         }
       }
     }
