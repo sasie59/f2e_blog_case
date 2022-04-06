@@ -8,6 +8,7 @@ export function Switch(props) {
     setChoice(name);
     // console.warn(name);
   }
+
   return (
     <div className={style.Switch}>
       <div
