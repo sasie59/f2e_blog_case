@@ -10,7 +10,9 @@ export function Contribute() {
         <Comp.Header />
       </div>
       <div className={style.deviceHeader}>
-        <img src={prev} alt="" />
+        <a href="/">
+          <img src={prev} alt="" />
+        </a>
         <div className={style.space} />
         <div className={style.text}>
           投稿 / 提案

@@ -72,7 +72,9 @@ export function HomePage() {
         <img src={next} alt="" />
       </div>
       <div className={style.imgWrite}>
-        <img src={pen} alt="" />
+        <a href="#/contribute">
+          <img src={pen} alt="" />
+        </a>
       </div>
       <div className={style.footer} />
     </div>
