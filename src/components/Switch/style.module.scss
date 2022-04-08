@@ -1,42 +1,21 @@
 .Switch {
-  // margin: 0 auto;
   min-width: 227px;
   height: 36px;
   display: flex;
   background-color: #fff;
   border-radius: 8px;
   position: relative;
-  .design {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #313131;
-    color: #fff;
+
+  & > div {
     width: 115px;
-    border-radius: 8px;
-  }
-  .proposal {
-    position: absolute;
-    right: 43px;
-    top: 8px;
-    align-items: center;
-  }
-  .ngised {
-    position: absolute;
-    top: 8px;
-    left: 29px;
+    display: flex;
     color: #313131;
-  }
-  .lasoporp {
-    position: absolute;
-    right: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #313131;
     border-radius: 8px;
-    width: 115px;
-    height: 36px;
-    color: #fff;
+    align-items: center;
+    justify-content: center;
+    &.active {
+      color: #fff;
+      background-color: #313131;
+    }
   }
 }
