@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './style.module.scss';
 
-export function Header() {
+export function Header(props) {
   return (
     <div className={style.Header}>
       <a href="">
@@ -11,7 +11,11 @@ export function Header() {
       </a>
       <div className={style.menu}>
         <div className={style.searchBar}>
-          <input placeholder='搜尋視覺或專案...' type="text" />
+          <input
+            placeholder='搜尋視覺或專案...'
+            type="text"
+            onChange={props.onChange}
+          />
           <div className={style.space} />
           <button />
         </div>

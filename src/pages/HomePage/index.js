@@ -31,6 +31,7 @@ const imgArr = [
 export function HomePage() {
   const [choice, setChoice] = useState("proposal");
   const [choose, setChoose] = useState('newest');
+  const [value, setValue] = useState('');
 
   const handleChange = (value) => {
     setChoice(value);
@@ -39,9 +40,16 @@ export function HomePage() {
     setChoose(value);
   }
 
+  const handleInput = ({ target }) => {
+    setValue(target.value);
+  }
+
   return (
     <div className={style.layout}>
-      <Comp.Header />
+      <Comp.Header
+        value={value}
+        onChange={handleInput}
+      />
       <div className={style.type}>
         <Comp.Switch
           design='設計分享'
@@ -71,6 +79,10 @@ export function HomePage() {
             item.type === choice
           ).filter(item =>
             item.category === choose
+          ).filter(item =>
+            item.name.toLowerCase().indexOf(value) > -1 ||
+            item.text.toLowerCase().indexOf(value) > -1 ||
+            item.title.toLowerCase().indexOf(value) > -1
           ).map(item =>
             <a href='#/project'>
               <Comp.Card
