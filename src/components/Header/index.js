@@ -10,15 +10,14 @@ export function Header(props) {
         </div>
       </a>
       <div className={style.menu}>
-        <div className={style.searchBar}>
+        <form className={style.searchBar} onSubmit={props.onSubmit}>
           <input
             placeholder='搜尋視覺或專案...'
             type="text"
-            onChange={props.onChange}
           />
           <div className={style.space} />
           <button />
-        </div>
+        </form>
         <div className={style.include}>
           <a href="#/contribute">
             <div className={style.proposal}>

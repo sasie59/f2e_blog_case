@@ -25,7 +25,6 @@ export function BlackBox(props) {
           </div>
         )}
       </div>
-
     </div>
   )
 }

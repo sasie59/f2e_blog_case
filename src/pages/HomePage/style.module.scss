@@ -25,10 +25,12 @@
   .content {  
     margin-top: 29px;
     padding-left: 163px;
-    // padding-left: 10%;
     .item {
       display: flex;
       flex-wrap: wrap;
+      a {
+        text-decoration: none;
+      }
     }
   }
   .page {
