@@ -68,12 +68,12 @@ export function Contribute() {
         </div>
         <div className={style.fileLink}>
           <div>視覺稿</div>
-          <input type="text" />
+          <textarea name="" id="" cols="30" rows="10"></textarea>
           <div className={style.text}>附上視覺稿連結，方便工程師了解詳細視覺</div>
         </div>
         <div className={style.describe}>
           <div>專案說明</div>
-          <input type="text" />
+          <textarea name="" id="" cols="30" rows="10"></textarea>
           <div className={style.text}>詳細說明專案，讓工程師更了解專案內容。</div>
         </div>
         <div className={style.release}>
