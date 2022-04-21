@@ -40,15 +40,17 @@ export function HomePage() {
     setChoose(value);
   }
 
-  const handleInput = ({ target }) => {
-    setValue(target.value);
+  const handleSearch = (e) => {
+    setValue(e.target.value);
+    // e.preventDefault();
+    // setValue('');
   }
 
   return (
     <div className={style.layout}>
       <Comp.Header
         value={value}
-        onChange={handleInput}
+        onSubmit={handleSearch}
       />
       <div className={style.type}>
         <Comp.Switch
