@@ -2,12 +2,18 @@ import React, { useState } from 'react';
 import style from './style.module.scss';
 import arrow from './arrow.png';
 export function BlackBox(props) {
-  const [item,] = useState(props.list[0]);
+  const [item, setItem] = useState(props.list[0]);
   const [isAppear, setIsAppear] = useState(false);
 
   const handleClick = () => {
     setIsAppear(!isAppear);
   }
+
+  const handleChange = (item) => {
+    props.onChange(item.key);
+    setItem(item);
+  }
+
   return (
     <div className={style.BlackBox} onClick={handleClick}>
       <div className={style.choice}>
@@ -15,11 +21,11 @@ export function BlackBox(props) {
         <img src={arrow} alt="" />
       </div>
       <div className={style.box}>
-        {isAppear && props.list.map(item =>
+        {isAppear && props.list.map((item, index) =>
           <div
             className={style.selectOne}
-            key={item}
-            onClick={props.onChange.bind(this, item.key)}
+            key={index}
+            onClick={handleChange.bind(this, item)}
           >
             {item.text}
           </div>

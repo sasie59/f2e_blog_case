@@ -11,7 +11,7 @@ import pen from './Icon/pen.png';
 const text = '開啟定位，搜尋附近藝文活動與台灣景點，簡單快速的規劃功能，輕鬆安排旅程...';
 const text2 = '想做一支整合股市、基金等資訊的網站，除了分析股市，也加入各家銀行手續…';
 const text3 = '大景。筠不，有產！轉到問我？都個一渝鳳人齊市之吝伙的碩都蚊的版林表下陳...'
-const imgArr = [
+const cardList = [
   { head: head, photo: photo, type: 'design', title: '我的輕旅行', text: text, category: 'newest', name: "Doris Wang", },
   { head: head, photo: photo, type: 'design', title: '我的輕旅行', text: text, category: 'popular', name: "Doris Wang", },
   { head: head, photo: photo, type: 'design', title: '我的輕旅行', text: text, category: 'newest', name: "Doris Wang", },
@@ -40,10 +40,8 @@ export function HomePage() {
     setChoose(value);
   }
 
-  const handleSearch = (e) => {
-    setValue(e.target.value);
-    // e.preventDefault();
-    // setValue('');
+  const handleSearch = (value) => {
+    setValue(value);
   }
 
   return (
@@ -77,16 +75,15 @@ export function HomePage() {
       </div>
       <div className={style.content}>
         <div className={style.item}>
-          {imgArr.filter(item =>
-            item.type === choice
-          ).filter(item =>
-            item.category === choose
-          ).filter(item =>
-            item.name.toLowerCase().indexOf(value) > -1 ||
-            item.text.toLowerCase().indexOf(value) > -1 ||
-            item.title.toLowerCase().indexOf(value) > -1
-          ).map(item =>
-            <a href='#/project'>
+          {cardList.filter(item =>
+            item.type === choice &&
+            item.category === choose && (
+              item.name.toLowerCase().indexOf(value) > -1 ||
+              item.text.toLowerCase().indexOf(value) > -1 ||
+              item.title.toLowerCase().indexOf(value) > -1
+            )
+          ).map((item, index) =>
+            <a href='#/project' key={index}>
               <Comp.Card
                 head={item.head}
                 photo={item.photo}

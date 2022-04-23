@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import style from './style.module.scss';
 
 export function Header(props) {
+
+  const inputDOM = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    props.onSubmit(inputDOM.current.value);
+  }
+
   return (
     <div className={style.Header}>
       <a href="">
@@ -10,8 +18,9 @@ export function Header(props) {
         </div>
       </a>
       <div className={style.menu}>
-        <form className={style.searchBar} onSubmit={props.onSubmit}>
+        <form className={style.searchBar} onSubmit={handleSubmit}>
           <input
+            ref={inputDOM}
             placeholder='搜尋視覺或專案...'
             type="text"
           />

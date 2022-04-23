@@ -4,8 +4,9 @@ import style from './style.module.scss';
 export function Switch(props) {
   return (
     <div className={style.Switch}>
-      {props.tabList.map(item =>
+      {props.tabList.map((item, index) =>
         <div
+          key={index}
           onClick={props.onChange.bind(this, item.key)}
           className={props.choice === item.key ? style.active : ''}
         >
