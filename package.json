@@ -2,6 +2,7 @@
   "name": "f2e_product",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sasie59.github.io/f2e_blog_case",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
