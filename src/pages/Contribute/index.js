@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from './style.module.scss';
 import * as Comp from '../../components';
 import addImg from './addImg.png';
 import prev from './prev.png'
 export function Contribute() {
+  const [value, setValue] = useState('');
+
+  const handleSearch = (value) => {
+    setValue(value);
+  }
   return (
     <div className={style.layout}>
       <div className={style.Header}>
-        <Comp.Header />
+        <Comp.Header
+          value={value}
+          onSubmit={handleSearch}
+        />
       </div>
       <div className={style.deviceHeader}>
         <a href="/">

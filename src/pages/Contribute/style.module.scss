@@ -29,6 +29,7 @@
         margin-top: 51px;
         margin-left: 30px;
         .addImg {
+          cursor: pointer;
           margin-left: 55px;
           color: #919191;
         }
@@ -139,6 +140,7 @@
           justify-content: center;
           align-items: center;
           margin-right: 16px;
+          cursor: pointer;
         }
         .submit {
           padding: 16.5px 73.5px;
@@ -147,7 +149,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          
+          cursor: pointer;
         }
       }
     }

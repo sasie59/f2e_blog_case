@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from './style.module.scss';
 import * as Comp from '../../components';
 import head from './head.png';
@@ -9,10 +9,17 @@ import bgc1 from './bgc1.png';
 import CC from '../../components/Content/CC.png';
 
 export function ProjectPage() {
+  const [value, setValue] = useState('');
+  const handleSearch = (value) => {
+    setValue(value);
+  }
   return (
     <div className={style.layout}>
-      <Comp.Header />
-      {/* <div className={style.content}>
+      <Comp.Header
+        value={value}
+        onSubmit={handleSearch}
+      />
+      <div className={style.content}>
         <Comp.Content
           head={head}
           name='Doris Wang'
@@ -29,14 +36,13 @@ export function ProjectPage() {
           title={'我的輕旅行'}
           innerText={'開啟定位，搜尋附近藝文活動與台灣景點，簡單快速的規劃功能，輕鬆安排旅程；上傳照片，記錄美好的回憶。'}
           link={'https://www.figma.com/file/cuQhxmhzBXMOGysKvrTHmO/Hermes?node-id=567%3A3885'}
-
           footer={{
             number: 236
           }}
           list={['網頁', 'Android']}
         />
-      </div> */}
-      <div className={style.content}>
+      </div>
+      {/* <div className={style.content}>
         <Comp.Content
           head={head1}
           name='Jenny Wilson'
@@ -56,7 +62,7 @@ export function ProjectPage() {
           }}
           list={['網頁', 'IOS']}
         />
-      </div>
+      </div> */}
     </div>
   )
 }
