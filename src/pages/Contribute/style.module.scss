@@ -170,8 +170,8 @@
       display: flex;
       img {
         display: block;
-        width: 3%;
-        height: 20%;
+        width: 60%;
+        height: 25%;
         margin-left: 16px;
         margin-top: 44px;
       }
@@ -184,7 +184,11 @@
     }
     .Contribute {
       margin: 36px auto 46px;
-      padding-right: 41px;
+      .firstRow {
+        .imgDescribe {
+          width: 210px;
+        }
+      }
       .types {
         .CheckBoxArr {
           .item {
@@ -229,6 +233,7 @@
     }
     .Contribute {
       margin: 0;
+      padding: 0 10px;
       .firstRow {
         flex-direction: column-reverse;
         .firstDescribe {
@@ -262,11 +267,13 @@
         }
       }
       .types {
+        
         .CheckBoxArr {
           flex-wrap: wrap;
           width: 100%;
           .item {
             margin-bottom: 24px;
+            margin-right: 35px;
             .text {
             }
           }
@@ -286,7 +293,7 @@
         }
         .box {
           margin : 0 auto;
-          
+          padding-bottom: 10%;
           .cancel {
             padding: 16.5px 39px;
           }

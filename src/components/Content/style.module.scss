@@ -147,8 +147,10 @@
         margin: 16px;
       }
       .innerText {
+        width: 100%;
       }
       a {
+        word-break:break-all;
         display: inline-block;
         margin-left: 16px;
       }

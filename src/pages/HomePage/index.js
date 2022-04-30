@@ -12,15 +12,16 @@ const text = '開啟定位，搜尋附近藝文活動與台灣景點，簡單快
 const text2 = '想做一支整合股市、基金等資訊的網站，除了分析股市，也加入各家銀行手續…';
 const text3 = '大景。筠不，有產！轉到問我？都個一渝鳳人齊市之吝伙的碩都蚊的版林表下陳...'
 const cardList = [
-  { head: head, photo: photo, type: 'design', title: '我的輕旅行', text: text, category: 'newest', name: "Doris Wang", },
   { head: head, photo: photo, type: 'design', title: '我的輕旅行', text: text, category: 'popular', name: "Doris Wang", },
-  { head: head, photo: photo, type: 'design', title: '我的輕旅行', text: text, category: 'newest', name: "Doris Wang", },
-  { head: head, photo: photo, type: 'design', title: '我的輕旅行', text: text, category: 'newest', name: "Doris Wang", },
+  { head: head, photo: photo, type: 'design', title: '我的輕旅行', text: text, category: 'popular', name: "Doris Wang", },
   { head: head, photo: photo, type: 'design', title: '我的輕旅行', text: text, category: 'popular', name: "Doris Wang", },
   { head: head, photo: photo, type: 'design', title: '我的輕旅行', text: text, category: 'popular', name: "Doris Wang", },
   { head: head, photo: photo, type: 'design', title: '我的輕旅行', text: text, category: 'newest', name: "Doris Wang", },
   { head: head, photo: photo, type: 'design', title: '我的輕旅行', text: text, category: 'newest', name: "Doris Wang", },
   { head: head2, photo: photo2, type: 'proposal', title: '潤起有理人', text: text3, category: 'newest', name: "Jenny Wilson", },
+  { head: head2, photo: photo2, type: 'proposal', title: '與怠電了氧賺', text: text3, category: 'popular', name: "Bessie Cooper", },
+  { head: head2, photo: photo2, type: 'proposal', title: '與怠電了氧賺', text: text3, category: 'popular', name: "Bessie Cooper", },
+  { head: head2, photo: photo2, type: 'proposal', title: '與怠電了氧賺', text: text3, category: 'popular', name: "Bessie Cooper", },
   { head: head2, photo: photo2, type: 'proposal', title: '與怠電了氧賺', text: text3, category: 'popular', name: "Bessie Cooper", },
   { head: head2, photo: photo2, type: 'proposal', title: '研弟給要的年要觸完當', text: text3, category: 'newest', name: "Arlene McCoy", },
   { head: head2, photo: photo2, type: 'proposal', title: '潤起有理人', text: text3, category: 'popular', name: "Robert Fox", },
