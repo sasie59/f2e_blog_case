@@ -100,9 +100,9 @@
     }
     .imgWrite {
       display: block;
-      position: absolute;
-      top: 540px;
-      right: 25%;
+      position: fixed;
+      bottom: 42px;
+      right: 16px;
       width: 58px;
       height: 58px;
       background: #313131;
